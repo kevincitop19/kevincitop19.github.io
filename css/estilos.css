@@ -1,55 +1,111 @@
 *{
- background-color: black;
- color: white;
-}
-.barrita h2{
-color: #cc0b36;
-}
-.contenedor h2{
-	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	font-size: 1rem ;
-	text-transform: uppercase;
-	color: #cc0b36;
-}
-
-.carousel .carousel-item{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	color: transparent;
-	
-}
-
-.carousel .carousel-item img{
-border-radius: 25px;
-		
-}
-.ima img{
- width: 100%;
-}
-.categorias{
-	display: flex;
-	justify-content: center;
-}
-.categorias a{
+	background-color: black;
 	color: white;
-	margin: 10px 20px;
-	font-size: 18px;
-	font-weight: 700;
-}
-
-.ventana{
-	background-color: blue;
-	width: 80%;
-	height: 80%;
-	color: white;
-	border-radius: 22px;
-	position: absolute;
-	left: 10% ;
+   }
+   .barrita h2{
+   color: #cc0b36;
+   }
+   .contenedor h2{
+	   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	   font-size: 1rem ;
+	   text-transform: uppercase;
+	   color: #cc0b36;
+   }
+   
+   .carousel .carousel-item{
+	   display: flex;
+	   flex-direction: column;
+	   justify-content: center;
+	   align-items: center;
+	   color: transparent;
+	   
+   }
+   
+   .carousel .carousel-item img{
+   border-radius: 25px;
+		   
+   }
+   .images {
+	width: 100%;
+	cursor: pointer;
+   }
+  
+   .categorias{
+	   display: flex;
+	   justify-content: center;
+   }
+   .categorias a{
+	   color: white;
+	   margin: 10px 20px;
+	   font-size: 18px;
+	   font-weight: 700;
+   }
+   
+.modelo{
 	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+
 }
-.cerrar img{
+
+.modal-content{
+	margin: auto;
+	display: block;
+	width: 200px;
+	height: 355px;
+	border-radius: 20px;	
+}
+
+
+#caption{
+	margin: auto;
+	display: block;
+	width: 100%;
+	max-width: auto;
+	text-align: center;
+	color: orange;
+	padding: 30px 0;
+	height: 100px;
+}
+
+.close{
 	position: absolute;
-	right: 30px;
+	top: 15px;
+	right: 25px;
+	color: black;
+	font-size: 50px;
+	background-color: black;
 }
+.close{
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+@media only screen and (max-width:220px){
+	.modal-content{
+		width:100%;
+	}
+}
+
+.modal-content,#caption{
+	-webkit-animation-name:zoom ;
+	-webkit-animation-duration: 0.3s;
+	animation-name: zoom;
+	animation-duration: 0.6s;	
+}
+@-webkit-keyframes zoom{
+	from{-webkit-transform: scale(0);}
+	to{-webkit-transform: scale(1);}
+}
+
+@keyframes zoom{
+	from{transform: scale(0);}
+	to{transform: scale(1);}
+}
+
