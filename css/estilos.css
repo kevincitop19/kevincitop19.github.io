@@ -1,10 +1,36 @@
 *{
 	background-color: black;
 	color: white;
-   }
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
    .barrita h2{
    color: #cc0b36;
+   font-size: 35px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    }
+   .barrita{
+	   display: flex;
+	   justify-content:space-around;
+   }
+
+   .pelicula-principal {
+	   background: url(/imagenes/principal.jpg);
+	   width: 465px;
+	   padding-right: 200px;
+	   padding-left: 15px;
+	   border-radius: 10px;
+   }
+   .pelicula-principal h3{
+	   background-color: transparent;
+	   font-size: 30px;
+	   padding-top: 30px;
+   }
+   .pelicula-principal p{
+	background-color: transparent;
+	font-size: 10px;
+	padding-top: 50px;
+ }
+
    .contenedor h2{
 	   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	   font-size: 1rem ;
@@ -109,3 +135,9 @@
 	to{transform: scale(1);}
 }
 
+#perfil{
+	width: 90px;
+	height: 100px;
+	border-radius: 30px ;
+	border: white;
+}
