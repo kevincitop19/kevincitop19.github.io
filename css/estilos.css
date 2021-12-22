@@ -6,11 +6,27 @@
    .barrita h2{
    color: #cc0b36;
    font-size: 35px;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-family:'Lobster',cursiva;
    }
    .barrita{
 	   display: flex;
-	   justify-content:space-around;
+	   justify-content:space-between;
+	   padding-right: 15px;
+	   padding-bottom: 50px;
+   }
+   .barrita div {
+	   padding-left: 9px;  
+	   display: flex;
+	   justify-content: space-between;
+	   align-items: flex-end;
+   }
+   .barrita div h2{
+	   position: absolute;
+	   background: transparent;
+   }
+   .barrita div span{
+	   padding-left: 195px;
+	   font-family:'Lobster',cursiva;
    }
 
   .pelicula-principal iframe{
@@ -46,12 +62,15 @@
    .categorias{
 	   display: flex;
 	   justify-content: center;
+	   border-color: #cc0b36 ;
+	   border-style: dotted;
    }
    .categorias a{
 	   color: white;
 	   margin: 10px 20px;
 	   font-size: 18px;
 	   font-weight: 700;
+	   font-family: 'Fjalla One', sans-serif;
    }
    
 .modelo{
