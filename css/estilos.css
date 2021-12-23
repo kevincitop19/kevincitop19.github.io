@@ -3,6 +3,7 @@
 	color: white;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
    .barrita h2{
    color: #cc0b36;
    font-size: 35px;
@@ -16,26 +17,36 @@
    }
    .barrita div {
 	   padding-left: 9px;  
-	   display: flex;
-	   justify-content: space-between;
 	   align-items: flex-end;
    }
-   .barrita div h2{
-	   position: absolute;
-	   background: transparent;
+   .barrita h2{
+	  margin-bottom: -7px;
    }
+
    .barrita div span{
-	   padding-left: 195px;
+	   width: 100px;
+	   padding-left: 117px;
+	   background: transparent;
 	   font-family:'Lobster',cursiva;
    }
 
   .pelicula-principal iframe{
-	  padding-left: 20px;
+	  padding-left: 15px;
 	  border-radius: 10px;
   }
   .pelicula-principal h3{
 		padding-left: 30px;
 		font-family:'Lobster',cursiva;
+   }
+   .parrafo-principal{
+	   
+	   padding: 0px 7.5px 0 7.5px;
+   }
+
+   .titulo-secundario {
+	padding-top: 30px;
+	font-family:'Lobster',cursiva;
+	padding-left: 13px;
    }
 
    .contenedor h2{
