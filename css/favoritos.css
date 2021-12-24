@@ -104,11 +104,13 @@
 }
 .modalImg {
   border-radius: 15px;
-  width: 80%;
+  width: 29%;
   max-width: 700px;
 }
 .modalTxt {
   margin-top: 1em;
+  color: #CA8C60;
+  font-family:'Lobster',cursiva;
 }
 .close {
   position: absolute;
